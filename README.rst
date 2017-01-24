@@ -1,8 +1,7 @@
 Stitching
 =========
 
-Stitch images to form a montage. A montage contains of a n-by-n grid, where in each grid compartment an image can be placed, e.g., a 5-by-5 montage contains 25 images in total.
-For more information on the imaging flow cytometry workflow and the image stitching (also referred to as image tiling) visit http://cellprofiler.org/imagingflowcytometry/
+Stitch images to form a montage. A montage contains of a n-by-n grid, where in each grid compartment an image can be placed, e.g., a 5-by-5 montage contains 25 images in total. Visit http://cellprofiler.org/imagingflowcytometry/ for more information on the imaging flow cytometry workflow and the image stitching (also referred to as image tiling).
 
 Requirements
 ============
