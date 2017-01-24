@@ -1,8 +1,8 @@
 Stitching
 =========
 
-Stitch images to form a montage. The montage contains a n by n grid, where in each grid compartment an image can be placed, e.g., a 5 by 5 montage contains 25 images.
-For more information on the imaging flow cytometry workflow and the stitching (also referred to as image tiling) visit http://cellprofiler.org/imagingflowcytometry/
+Stitch images to form a montage. A montage contains of a n-by-n grid, where in each grid compartment an image can be placed, e.g., a 5-by-5 montage contains 25 images in total.
+For more information on the imaging flow cytometry workflow and the image stitching (also referred to as image tiling) visit http://cellprofiler.org/imagingflowcytometry/
 
 Requirements
 ============
@@ -50,12 +50,13 @@ Open a new command line window (also called command prompt window in Windows OS 
 
 1. To use the GUI, type
   $ python stitching.py
-The GUI will open where you can select a .cif file to generate the montages. Optionally you can also display selected images from the .cif file.
+The GUI window will open where you can select a .cif file to generate the montages. Optionally you can also display selected images from the .cif file.
 
 OR
 
 2. To use the command line, type
-  $ python stitching -o path/to/OUTPUT_DIRECTORY path/to/IMAGE
+  $ python stitching -image='path/to/IMAGE' -output path/to/OUTPUT_DIRECTORY
+
 
 Optional:
 
