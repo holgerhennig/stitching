@@ -1,7 +1,8 @@
 Stitching
 =========
 
-Stitch images to form a montage.
+Stitch images to form a montage. The montage contains a n by n grid, where in each grid compartment an image can be placed, e.g., a 5 by 5 montage contains 25 images.
+For more information on the imaging flow cytometry workflow and the stitching (also referred to as image tiling) visit http://cellprofiler.org/imagingflowcytometry/
 
 Requirements
 ============
@@ -41,17 +42,20 @@ Installation
 
   $ pip install -e .
 
-Info
-====
-Users may notice that when opening and zooming the images in IDEAS (and also in ImageJ, IrfanView) the images appear to be higher resolution, but this is because the software has an adjustable DPI setting, which uses interpolation to scale the images up (adding pixels) for display and publication.
-
 Use
 ===
+Generates per-channel montages from IMAGE saved to OUTPUT_DIRECTORY. Each image in IMAGE has shape 55px by 55px and is padded with random noise. Montage files are named "ch1.tif", "ch2.tif", ..., one for each channel.
 
+Open a new command line window (also called command prompt window in Windows OS or terminal in MAC OS). Now, to generate the montages, you can either (1) start the stitching GUI or (2) use the command line.
+
+1. To use the GUI, type
+  $ python stitching.py
+The GUI will open where you can select a .cif file to generate the montages. Optionally you can also display selected images from the .cif file.
+
+OR
+
+2. To use the command line, type
   $ python stitching -o path/to/OUTPUT_DIRECTORY path/to/IMAGE
-
-Generates per-channel tiled images from IMAGE saved to OUTPUT_DIRECTORY. Each image in IMAGE has shape 55px by 55px and
-is padded with random noise. Files are named "ch1.tif", "ch2.tif", ..., one for each channel.
 
 Optional:
 
